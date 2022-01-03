@@ -1,0 +1,26 @@
+h2{
+    margin:0;
+}
+
+span{
+    font-weight: bold;
+}
+
+.userInfo{
+    background-color: #ebebeb;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    padding-right: 1%;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 6%;
+}
+.userCount{
+    text-align: right;
+}
+
+.userName{
+    text-decoration: underline;
+    text-decoration-color: #35a5da;
+    text-underline-offset: 0.2em; 
+}

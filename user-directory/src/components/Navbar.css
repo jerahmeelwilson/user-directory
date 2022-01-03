@@ -1,0 +1,23 @@
+.navBtn{
+    background-color: #222222;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+.frmBtn{
+    background-color: #34a5da;
+    color:white;
+    border: none;
+    font-size: 0.8em;
+    padding: 0.3em 0.55em;
+    border-radius: 6px;
+    margin:0.5em;
+}
+
+.btns{
+    display: flex;
+    padding-left: 6%;
+    padding-right: 6%;
+    justify-content: space-between;
+    padding-bottom: 10%;
+}
