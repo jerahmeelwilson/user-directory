@@ -9,11 +9,11 @@ export default function NewUserForm() {
     title: "",
     favoriteMovies: ['','',''],
   });
-
+  
   function handleSubmit(event) {
     console.log("submitting");
   }
-
+  
   function handleInput(event) {
     switch (event.target.id) {
       case "first":
