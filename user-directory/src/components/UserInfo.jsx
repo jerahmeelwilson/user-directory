@@ -4,8 +4,6 @@ export default function UserInfo({users,user, currentUser}) {
   if(users.length === 0){
     return <h1>Empty!</h1>
   }
-  
-  
   return (
     <div className="userInfo">
       <h2 className="userCount">

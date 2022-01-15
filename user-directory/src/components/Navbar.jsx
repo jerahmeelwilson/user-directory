@@ -1,6 +1,6 @@
 import React from "react";
 import "./Navbar.css";
-export default function Navbar({ users,setUsers, currentUser, setCurrentUser, setAddNewUser }) {
+export default function Navbar({users,setUsers, currentUser, setCurrentUser, setAddNewUser,editUser,setEditUser }) {
   
   
   function nextUser(event) {
@@ -32,7 +32,7 @@ export default function Navbar({ users,setUsers, currentUser, setCurrentUser, se
     <div className="btns">
       <button className="navBtn" onClick={previousUser}>{`< Previous`}</button>
       <div>
-        <button className="frmBtn">Edit</button>
+        <button onClick={()=>{setEditUser(true)}}className="frmBtn">Edit</button>
         <button onClick={deleteUser}className="frmBtn">Delete</button>
         <button onClick={() =>{setAddNewUser(true)}}className="frmBtn">New</button>
       </div>
