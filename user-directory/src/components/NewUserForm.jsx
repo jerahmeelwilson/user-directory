@@ -1,6 +1,9 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 
-export default function NewUserForm() {
+
+export default function NewUserForm({newID,setNewID,users,setUsers,setAddNewUser}) {
+
+  
   const [newUser, setNewUser] = useState({
     id: null,
     name: { first: "", last: "" },
@@ -10,10 +13,16 @@ export default function NewUserForm() {
     favoriteMovies: ['','',''],
   });
   
-  function handleSubmit(event) {
-    console.log("submitting");
-  }
   
+  function handleSubmit(event) {
+     setNewID(newID+1);
+     event.preventDefault();
+     let addedUser = {...newUser,id:newID}
+     let newUsers = [...users];
+     newUsers.push(addedUser);
+     setUsers(newUsers);
+     setAddNewUser(false);
+  }
   function handleInput(event) {
     switch (event.target.id) {
       case "first":
@@ -95,7 +104,7 @@ export default function NewUserForm() {
       default:
     }
   }
-  console.log(newUser)
+
   return (
     <div>
       <form>
